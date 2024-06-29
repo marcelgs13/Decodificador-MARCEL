@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content= "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/logo_hollow.png" type="image/x-icon">
+</head>
+<body>
+    
+    <main class="main_container">
+        <header class="cabecalho">
+            <img src="./assets/logo_hollow.png" alt="logo do cabeçalho">
+            <h1>Coded Word</h1>
+        </header>
+    
+        <div class="container_input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite seu texto"></textarea>
+                <p>Atenção: Apenas letras minúsculas e sem acento.</p> 
+            </div>
+
+            <div id="output">
+                <img src="./assets/output_imagem.png" alt="Logo do output">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+            </div>    
+        </div>
+       
+        <div class="buttons">
+            <div>
+                <div class="container-btn">
+                    <button onclick="criptografar()" class="button-criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="button-descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+ 
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://www.youtube.com/channel/UCtkEB_W9LMdFNunz3NY64DQ"><ion-icon name="logo-youtube" ></ion-icon></a>
+            <a href="https://www.instagram.com/marcelgustavode/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://github.com/marcelgs13"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <h3>Desenvolvido por Marcel Gustavo.</h3>
+    </footer>
+
+    <script src="interacao/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

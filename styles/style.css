@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --corprincipal: #FFFFFF;
+    --corsecundaria: #0A3871;
+    --corterciaria: #F00901;
+}
+body {
+    background-image: url("../assets/fundo.png");
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo inteiro */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    padding:2%;
+}
+.cabecalho h1 {
+    color:var(--corprincipal);
+}
+.cabecalho img {
+    max-width: 700px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+.container_input {
+    display:flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container_input .input{
+    width:400px;
+    height: 330px;
+}
+
+#input-texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color:var(--corprincipal);
+    background: var(--corsecundaria);
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#output {
+    display:flex;
+    flex-direction: column;
+    border: 3px solid var(--corsecundaria);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--corprincipal);
+}
+
+#output span {
+    font-size: 16px;
+    text-align: center;
+}
+
+#output img {
+    max-width: 300px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.container-btn button{
+    border: 2px solid var(--corprincipal);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--corterciaria);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.button-copiar{
+    border: 2px solid var(--corprincipal);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--corterciaria);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+
+.container-btn button:hover {
+    border: 2px solid var(--corterciaria);
+    background-color: black; /* Define a cor de fundo preta no hover */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: var(--corterciaria);
+    color:var(--corprincipal);
+}
+
+.rodape h3{
+    font-size: 16px;
+}
+
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--corsecundaria);
+}
+
+.icons ion-icon:hover{
+    color: white; /* Define a cor de fundo branca no hover */
+}
